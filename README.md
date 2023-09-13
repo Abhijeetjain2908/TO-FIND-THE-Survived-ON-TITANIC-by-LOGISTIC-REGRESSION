@@ -1,4 +1,4 @@
-# TO-FIND-THE-Survived-ON-TITANIC-by-LOGISTIC-REGRESSION
+# TO FIND THE SURVIVED-ON TITANIC BY LOGISTIC REGRESSION
 
 Titanic Survival Prediction with Logistic Regression:
 
