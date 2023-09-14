@@ -30,38 +30,12 @@ print(titanic_train['Fare'])
 print(titanic_train.Fare.isnull().sum())
 
 
-#******************************sir code*****************************
-
-
-# titanic_train = pd.read_csv(r"C:\Users\HP\Desktop\machine learning\dataset\titanic.csv")    # Read the data
-# print(titanic_train)
-
 char_cabin = titanic_train["Cabin"].astype(str)     # Convert cabin to str
 
 new_Cabin = np.array([cabin[0] for cabin in char_cabin]) # Take first letter
 
 titanic_train["Cabin"] = pd.Categorical(new_Cabin)  # Save the new cabin var
 print(titanic_train["Cabin"])
-
-# print(titanic_train)
-
-# # Impute median Age for NA Age values
-# new_age_var = np.where(titanic_train["Age"].isnull(), # Logical check
-#                        28,                       # Value if check is true
-#                        titanic_train["Age"])     # Value if check is false
-
-# titanic_train["Age"] = new_age_var
-# print(titanic_train["Age"])
-
-# new_fare_var = np.where(titanic_train["Fare"].isnull(), # Logical check
-#                        50,                         # Value if check is true
-#                        titanic_train["Fare"])     # Value if check is false
-
-# titanic_train["Fare"] = new_fare_var
-# print(titanic_train["Fare"].head(100))
-
-#******************************sir code*****************************
-
 
 from sklearn import linear_model
 
